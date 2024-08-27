@@ -1,13 +1,14 @@
+
 #Lets import modules
 import sys
 import os
 import time
 import socket
-import scapy.all as scapy
+import scapy.all as scapy # type: ignore
 import random
 import threading
-from django.core.validators import URLValidator
-from django.core.exceptions import ValidationError
+from django.core.validators import URLValidator # type: ignore
+from django.core.exceptions import ValidationError # type: ignore
 
 validate = URLValidator()
 
@@ -81,7 +82,7 @@ try :
 except KeyboardInterrupt:
 	print(" ")
 	print("\n [-] Ctrl+C Detected.........Exiting")
-	print(" [-] DDOS ATTACK STOPPED")
+	print(" [-] RIZZ ATTACK STOPPED")
 input(" Enter To Exit")
 os.system("clear")
 print(" [-] Dr. Banner is tired...")
